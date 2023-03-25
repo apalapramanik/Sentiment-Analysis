@@ -36,3 +36,5 @@ After training and evaluating the final model for sentiment analysis of IMDb mov
 To further evaluate the performance of the model, we generated a confusion matrix shown in figure on the test set. The confusion matrix shows that the model correctly predicted 10947 positive reviews and 10759 negative reviews. However, the model incorrectly predicted 1741 negative reviews as positive and 1553 positive reviews as negative.
 
 These results indicate that the model has a good balance between precision and recall, which is crucial for sentiment analysis tasks. The high accuracy indicates that the model is capable of effectively identifying the sentiment of movie reviews, making it a useful tool for analyzing large volumes of movie reviews.
+
+![plot3](https://user-images.githubusercontent.com/50993551/227673893-bc00cb3a-8e2b-403b-90b8-5783f69fdb53.png)
