@@ -29,6 +29,9 @@ The model is compiled with binary cross-entropy loss function, Adam optimizer, a
 
 Hyperparameter tuning is an essential step in optimizing the performance of any deep-learning model. In this particular model, two hyperparameters, the dropout rate, and the GRU hidden units were tuned. The dropout rate is a regularization technique that randomly drops out some neurons during training to reduce overfitting. The GRU hidden units determine the complexity of the model and the amount of information it can capture. The values of these hyperparameters were chosen based on their effect on the validation accuracy and loss as shown in figure  where "mod1" and "mod2" are models with 64 hidden units and 0.5 and 0.3 dropout rates respectively, while "mod3" and "mod4" are models with 128 hidden units and 0.5 and 0.3 dropout rates respectively.
 
+![plot](https://user-images.githubusercontent.com/50993551/227674600-0be22a99-b839-4367-9033-2b3e77499359.png)
+
+
 ## Results:
 
 After experimenting with various values of dropout rate and GRU hidden units, we chose to set the GRU hidden units to 128 and the dropout rate to 0.5 based on the validation accuracy and loss of "mod3". These values produced the best validation accuracy and loss, indicating that they provided the optimal balance between model complexity and generalization. However, it's important to note that hyperparameter tuning is an iterative process and should be performed carefully with a thorough understanding of the model and the data.
