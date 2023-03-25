@@ -16,12 +16,14 @@ This model is designed for sentiment analysis of IMDb movie reviews using bidire
 The next layer is a Bidirectional GRU layer, which processes the input sequence in both forward and backward directions. The GRU layer has 128 units and returns the sequences of hidden states at each time step.
 
 
-
 The attention layer is then added, which receives the sequences of hidden states from the Bidirectional GRU and outputs a single vector representation of the input sequence. This is accomplished by calculating a weight vector for each hidden state, which indicates its importance in representing the input sequence. The attention mechanism can capture important information from the input sequence that might be overlooked by the Bidirectional GRU.
 
 A dropout layer with a dropout rate of 0.5 is added to prevent overfitting. A dense layer with 16 units and sigmoid activation is then added, followed by another dense layer with a single unit and sigmoid activation. The final dense layer outputs the predicted sentiment of the input sequence as either positive or negative.
 
 The model is compiled with binary cross-entropy loss function, Adam optimizer, and accuracy as the evaluation metric. The architecture can be visualized in figure .
+
+
+![model](https://user-images.githubusercontent.com/50993551/227674242-af3cdd2b-aad0-4dea-a252-3bc68137001c.png)
 
 ## Hyperparameter Tuning:
 
