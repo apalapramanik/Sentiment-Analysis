@@ -31,8 +31,14 @@ Hyperparameter tuning is an essential step in optimizing the performance of any 
 
 ![plot](https://user-images.githubusercontent.com/50993551/227674600-0be22a99-b839-4367-9033-2b3e77499359.png)
 
+![plot2](https://user-images.githubusercontent.com/50993551/227674648-05e58c89-8e89-4edc-bbab-70744ef8df8d.png)
+
 
 ## Results:
+
+### ACCURACY: 86.8%
+
+### LOSS: 0.29
 
 After experimenting with various values of dropout rate and GRU hidden units, we chose to set the GRU hidden units to 128 and the dropout rate to 0.5 based on the validation accuracy and loss of "mod3". These values produced the best validation accuracy and loss, indicating that they provided the optimal balance between model complexity and generalization. However, it's important to note that hyperparameter tuning is an iterative process and should be performed carefully with a thorough understanding of the model and the data.
 
